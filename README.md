@@ -36,9 +36,13 @@ In the command line, the first word of any command refers to the  program that e
 
 `git pull`: As a rule of thumb, whenever you sit down to work, run this first. It will make sure that your repository is up to date with the one on Github.
 
-`git commit -A -m "YOUR COMMIT MESSAGE HERE"`: This will commit your changes locally. `-A` is telling git to stage all of the changes you have made, and `-m` is telling it that whatever comes next in quotes is the commit message.
+`git add .`: This is the easiest way to stage all of your changes and start tracking any new files. You will need to run this before you commit in order to tell git that you want it to take note of the changes you have made.
+
+`git commit -m "YOUR COMMIT MESSAGE HERE"`: This will commit your changes locally. `-m` is telling git that whatever comes next in quotes is the commit message.
 
 `git push`: This will push your changes to the remote repository. It's usually a good idea to run `git pull` before `git push`; if there are changes to the remote repository that have been made since your last pull, the push will fail and you will get an error message.
+
+`git status`: This will give you a rundown of what changes are staged for commit, what changes haven't been staged yet, and what files haven't been tracked yet. It's good if you aren't sure whether you have changed anything since your last commit.
 
 
 
